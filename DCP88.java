@@ -1,3 +1,8 @@
+// Implement division of two positive integers without using the division, multiplication, or modulus operators. 
+// Return the quotient as an integer, ignoring the remainder.
+
+// Perform division by subtracting the divisor from the dividend until the dividend's value falls below zero
+
 import java.util.Scanner.*;
 import java.util.*;
 
