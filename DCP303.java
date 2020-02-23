@@ -1,4 +1,4 @@
-//Given a clock time in hh:mm format, determine, to the nearest degree, the angle between the hour and the minute hands.
+// Given a clock time in hh:mm format, determine, to the nearest degree, the angle between the hour and the minute hands.
 
 import java.lang.*;
 
@@ -6,18 +6,19 @@ class DCP303
 {
 	public static float angle(String time)
 	{
-		// Convet the time into hour and minute variables
+		// Convert the time into hour and minute variables
 		float hour = Float.parseFloat(time.substring(0, 2));
 		float minutes = Float.parseFloat(time.substring(3, 5));
 
 		// Each minute on the clock represents a turn of 6 degrees
-		// Multiply hour and minutes by 6 to obtain the angle
+		// Multiply minutes by 6 to obtain the angle
+		// Since there are 5 minute spaces between each hour symbol on a clock, and each minute is 6 degrees, multiple hour by 6 * 5 = 30 to obtian the angle
 		// Use mod 360 on the hour variable to reset it to 0 whenver it reaches 12
 		hour = (hour * 30) % 360;
 		minutes *= 6;
 
 		// On a clock, the hour hand moves slightly as the minute hand moves
-		// Calculate the increased turn of the hour hand by dividing hour by 360, then multiplying by 30
+		// Calculate the increased turn of the hour hand by dividing hour by 360, then multiplying by 30 (5 * 6, same as previous calculation)
 		hour += (minutes / 360) * 30;
 		float ans = Math.abs(hour - minutes);
 		return (ans > 180) ? 360 - ans : ans;
