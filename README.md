@@ -1,6 +1,8 @@
 # DCP-LC
 A repository containing my solutions to Daily Coding Problems and LeetCode problems
 
+DCP1	- Check whether an array contains two numbers that add to a target 
+
 DCP88 	- Perform division without *, /, or %
 
 DCP273	- Find a fixed point within an array
