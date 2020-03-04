@@ -1,7 +1,9 @@
 # DCP-LC
 A repository containing my solutions to Daily Coding Problems and LeetCode problems
 
-DCP1	- Check whether an array contains two numbers that add to a target 
+DCP1	- Check whether an array contains two numbers that add to a target
+
+DCP2	- Multiply each element of an array by all the elements in the array except itself 
 
 DCP88 	- Perform division without *, /, or %
 
