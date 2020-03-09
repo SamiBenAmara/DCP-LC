@@ -1,6 +1,10 @@
 # DCP-LC
 A repository containing my solutions to Daily Coding Problems and LeetCode problems
 
+hamDist	- Given two Integers, find the hamming distance between them (LeetCode)
+
+RevInt	- Reverse the given Integer (LeetCode) 
+
 DCP1	- Check whether an array contains two numbers that add to a target
 
 DCP2	- Multiply each element of an array by all the elements in the array except itself 
